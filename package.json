@@ -2,6 +2,7 @@
   "name": "panic-pet",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://jlrosenberg.github.io/panic-pet",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -29,7 +30,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +55,7 @@
   "devDependencies": {
     "@types/lodash-es": "^4.17.3",
     "@types/react-router-dom": "^5.1.6",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.1.2"
   }
 }
