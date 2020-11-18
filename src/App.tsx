@@ -2,43 +2,76 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import CreatePetPage from "./pages/CreatePetPage";
-import { NoSsr, ThemeProvider } from "@material-ui/core";
+import { Button, NoSsr, ThemeProvider, Typography } from "@material-ui/core";
 import theme from "./common/theme";
-import { BACKGROUND_URL } from "./common/static";
+import { BACKGROUND_URL, CUTE_PETS } from "./common/static";
 import { useWindowHeight } from "@react-hook/window-size";
-import { Route, BrowserRouter as Router, Link, Switch } from "react-router-dom";
+import {
+  Route,
+  BrowserRouter as Router,
+  Link,
+  Switch,
+  HashRouter,
+} from "react-router-dom";
 import MyPetsPage from "./pages/MyPetsPage";
 import BottomNav from "./components/BottomNav/BottomNav";
-
+import backgroundUrl from "./backgroundImg.jpg";
 function App() {
   const height = useWindowHeight();
+
+  const goToCreate = () => {
+    window.location.href = `/create`;
+  };
+
   return (
     // <ThemeProvider theme={theme} >
     <NoSsr>
       <div
         style={{
-          backgroundImage: `url(${BACKGROUND_URL})`,
+          backgroundImage: `url(${backgroundUrl})`,
           backgroundRepeat: "repeat",
+          backgroundSize: "contain",
           height: height - 56,
         }}
       >
-        <Router>
+        <HashRouter>
           <div>
             {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-            <Switch>
-              <Route path="/create">
-                <CreatePetPage />
-              </Route>
-              <Route path="/dashboard">
-                <MyPetsPage />
-              </Route>
-              <Route path="/">
-                <CreatePetPage />
-              </Route>
-            </Switch>
+            <Route path="/dashboard">
+              <MyPetsPage />
+            </Route>
+            <Route path="/create">
+              <CreatePetPage />
+            </Route>
+            <Route path="/stats">
+              <Typography variant="h3">Not implemented yet</Typography>
+            </Route>
+
+            <Route exact path="/">
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  paddingTop: 100,
+                }}
+              >
+                <img src={CUTE_PETS} style={{ height: 200, width: 200 }} />
+                <Typography variant="h3">Peaceful Pets</Typography>
+                <Button
+                  color="primary"
+                  href="#/create"
+                  variant="contained"
+                  style={{ marginTop: 100 }}
+                >
+                  Create your pet!
+                </Button>
+              </div>
+            </Route>
           </div>
-        </Router>
+        </HashRouter>
       </div>
       <BottomNav />
     </NoSsr>

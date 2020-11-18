@@ -35,7 +35,8 @@ const ConfirmationStep: React.FC<Props> = ({
       title={`Ready to meet ${name}, your new ${specie} ${pet}?`}
       items={[`Meet ${name}`]}
       imageUrl={getImageUrl()}
-      onItemSelected={onConfirm}
+      buttonUrl={`./#/dashboard`}
+      onItemSelected={() => {}}
       onBackButtonClick={onBackButtonClick}
     />
   );

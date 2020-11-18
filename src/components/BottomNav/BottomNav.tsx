@@ -8,7 +8,7 @@ const BottomNav: React.FC = () => {
   const classes = useStyles();
 
   const onItemClicked = (event: any, newValue: string) => {
-    window.location.href = `/${newValue}`;
+    window.location.href = `./#/${newValue}`;
   };
 
   return (

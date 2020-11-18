@@ -7,6 +7,7 @@ import useStyles from "./useStyles";
 interface Props {
   title: string;
   items: Array<string>;
+  buttonUrl?: string;
   imageUrl?: string;
   onItemSelected: (itemClicked: string) => void;
   onBackButtonClick?: () => void;
@@ -15,6 +16,7 @@ interface Props {
 const SelectFromListScreen: React.FC<Props> = ({
   title,
   items,
+  buttonUrl,
   imageUrl,
   onItemSelected,
   onBackButtonClick,
@@ -45,6 +47,7 @@ const SelectFromListScreen: React.FC<Props> = ({
             color="primary"
             fullWidth
             className={classes.petButton}
+            href={buttonUrl}
             onClick={() => {
               onItemSelected(item);
             }}

@@ -11,7 +11,7 @@ export const CUTE_PETS =
   "https://i.pinimg.com/originals/97/ac/45/97ac45eac6b2225b934ce8d9ab00a56d.png";
 
 export const BACKGROUND_URL =
-  "https://lh3.googleusercontent.com/proxy/AX2SPHgc9_NRgrrLUWlLGCK9VTuNeAUaGxC0k1M1IRPNFtoERwOqo_1Jutuk1ZSrSYgOm2gD6l2bTtv-P04JbWqfyO51D76AZVco0Md5ih3cV6tZVIn4Pg9SkDxDArcqZ8usnLHDLsmjaoH3SRDXNk4Z4BlfDIY1jS8";
+  "http://www.allwhitebackground.com/images/5/Cute-Background-High-Quality-Image.jpg";
 
 export const ICE_CREAM_CONE_URL =
   "https://images.vexels.com/media/users/3/151649/isolated/preview/058d4939c563ec3ec4c093f949aecb1c-cone-ice-cream-cartoon-by-vexels.png";

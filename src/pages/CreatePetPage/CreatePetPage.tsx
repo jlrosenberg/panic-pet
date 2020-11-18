@@ -32,7 +32,7 @@ const CreatePetPage: React.FC = () => {
   };
 
   const onConfirm = () => {
-    window.location.href = "/dashboard";
+    window.location.href = "./#/dashboard";
   };
 
   return (
