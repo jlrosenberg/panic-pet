@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/panic-pet/static/css/main.ab7136cd.chunk.css",
-    "main.js": "/panic-pet/static/js/main.0be4e62a.chunk.js",
-    "main.js.map": "/panic-pet/static/js/main.0be4e62a.chunk.js.map",
+    "main.js": "/panic-pet/static/js/main.00aec8f6.chunk.js",
+    "main.js.map": "/panic-pet/static/js/main.00aec8f6.chunk.js.map",
     "runtime-main.js": "/panic-pet/static/js/runtime-main.44583b78.js",
     "runtime-main.js.map": "/panic-pet/static/js/runtime-main.44583b78.js.map",
-    "static/js/2.735e0883.chunk.js": "/panic-pet/static/js/2.735e0883.chunk.js",
-    "static/js/2.735e0883.chunk.js.map": "/panic-pet/static/js/2.735e0883.chunk.js.map",
+    "static/js/2.1e15f74e.chunk.js": "/panic-pet/static/js/2.1e15f74e.chunk.js",
+    "static/js/2.1e15f74e.chunk.js.map": "/panic-pet/static/js/2.1e15f74e.chunk.js.map",
     "static/js/3.3f1c3d5d.chunk.js": "/panic-pet/static/js/3.3f1c3d5d.chunk.js",
     "static/js/3.3f1c3d5d.chunk.js.map": "/panic-pet/static/js/3.3f1c3d5d.chunk.js.map",
     "index.html": "/panic-pet/index.html",
     "static/css/main.ab7136cd.chunk.css.map": "/panic-pet/static/css/main.ab7136cd.chunk.css.map",
-    "static/js/2.735e0883.chunk.js.LICENSE.txt": "/panic-pet/static/js/2.735e0883.chunk.js.LICENSE.txt",
+    "static/js/2.1e15f74e.chunk.js.LICENSE.txt": "/panic-pet/static/js/2.1e15f74e.chunk.js.LICENSE.txt",
     "static/media/ConyEating2.9a2846a6.gif": "/panic-pet/static/media/ConyEating2.9a2846a6.gif",
     "static/media/conyGiveLove.36e1f916.gif": "/panic-pet/static/media/conyGiveLove.36e1f916.gif",
     "static/media/conyGivePresent.d8143888.gif": "/panic-pet/static/media/conyGivePresent.d8143888.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.44583b78.js",
-    "static/js/2.735e0883.chunk.js",
+    "static/js/2.1e15f74e.chunk.js",
     "static/css/main.ab7136cd.chunk.css",
-    "static/js/main.0be4e62a.chunk.js"
+    "static/js/main.00aec8f6.chunk.js"
   ]
 }
