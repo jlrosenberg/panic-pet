@@ -38,6 +38,7 @@ const SpeciesSelector: React.FC<Props> = ({
 
     return BIRD_URL;
   };
+
   return (
     <SelectFromListScreen
       title={`Select your ${pet}'s species:`}

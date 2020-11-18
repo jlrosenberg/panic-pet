@@ -12,3 +12,20 @@ export const CUTE_PETS =
 
 export const BACKGROUND_URL =
   "https://lh3.googleusercontent.com/proxy/AX2SPHgc9_NRgrrLUWlLGCK9VTuNeAUaGxC0k1M1IRPNFtoERwOqo_1Jutuk1ZSrSYgOm2gD6l2bTtv-P04JbWqfyO51D76AZVco0Md5ih3cV6tZVIn4Pg9SkDxDArcqZ8usnLHDLsmjaoH3SRDXNk4Z4BlfDIY1jS8";
+
+export const ICE_CREAM_CONE_URL =
+  "https://images.vexels.com/media/users/3/151649/isolated/preview/058d4939c563ec3ec4c093f949aecb1c-cone-ice-cream-cartoon-by-vexels.png";
+
+export const CONY_HUNGRY_URL =
+  "https://i.pinimg.com/originals/8c/87/aa/8c87aa23ff8a6c938da6e4ade979690c.png";
+
+export const PRESENT_IMG_URL =
+  "https://www.industrialheating.com/ext/resources/images/Heat-Treated-Gifts/secretlondon-red-present-300px.png";
+
+export const CONY_ASKING_FOR_PRESENT_URL =
+  "https://thumbs.gfycat.com/WarpedZigzagIchthyosaurs-size_restricted.gif";
+
+export const HEART_URL = "https://img.icons8.com/cotton/2x/like.png";
+
+export const CONY_NEEDS_A_HUG_URL =
+  "https://www.jing.fm/clipimg/full/128-1287237_sweet-drawing-love-brown-and-cony-love.png";

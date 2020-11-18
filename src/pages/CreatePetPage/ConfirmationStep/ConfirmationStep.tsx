@@ -1,19 +1,22 @@
-import { Button, Typography } from "@material-ui/core";
 import React from "react";
-import { BIRD_URL, CAT_URL, DOG_URL } from "../../../common/static";
+import { CAT_URL, DOG_URL, BIRD_URL } from "../../../common/static";
 import SelectFromListScreen from "../../../components/SelectFromListScreen";
 import { Pet } from "../CreatePetPage";
 
 interface Props {
-  onNameSelected: (name: string) => void;
-  onBackButtonClick: () => void;
   pet: Pet;
+  specie: string;
+  name: string;
+  onConfirm: () => void;
+  onBackButtonClick: () => void;
 }
 
-const NamePicker: React.FC<Props> = ({
-  onNameSelected,
-  onBackButtonClick,
+const ConfirmationStep: React.FC<Props> = ({
   pet,
+  specie,
+  name,
+  onConfirm,
+  onBackButtonClick,
 }) => {
   const getImageUrl = () => {
     if (pet === "Cat") {
@@ -26,15 +29,16 @@ const NamePicker: React.FC<Props> = ({
 
     return BIRD_URL;
   };
+
   return (
     <SelectFromListScreen
-      title="Pick Your Pets Name!"
-      items={["Joan", "Frederick", "Mittens", "Paws", "Enter Your Own Name"]}
+      title={`Ready to meet ${name}, your new ${specie} ${pet}?`}
+      items={[`Meet ${name}`]}
       imageUrl={getImageUrl()}
-      onItemSelected={onNameSelected}
+      onItemSelected={onConfirm}
       onBackButtonClick={onBackButtonClick}
     />
   );
 };
 
-export default NamePicker;
+export default ConfirmationStep;

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import useLocalStorage from "../../common/useLocalStorage";
+import ConfirmationStep from "./ConfirmationStep";
 import NamePicker from "./NamePicker";
 import PetSelector from "./PetSelector";
 import SpeciesSelector from "./SpeciesSelector";
@@ -10,9 +12,9 @@ export type Pet = "Dog" | "Cat" | "Bird";
 const CreatePetPage: React.FC = () => {
   const classes = useStyles();
   const [phase, setPhase] = useState<Phase>("petSelect");
-  const [pet, setPet] = useState<Pet>("Dog");
-  const [specie, setSpecie] = useState<string>();
-  const [name, setName] = useState<string>();
+  const [pet, setPet] = useLocalStorage<Pet>("pet", "Dog");
+  const [specie, setSpecie] = useLocalStorage<string>("specie", "");
+  const [name, setName] = useLocalStorage<string>("name", "");
 
   const onPetSelected = (petType: Pet) => {
     setPet(petType);
@@ -27,6 +29,10 @@ const CreatePetPage: React.FC = () => {
   const onNamePicked = (newName: string) => {
     setName(newName);
     setPhase("completed");
+  };
+
+  const onConfirm = () => {
+    window.location.href = "/dashboard";
   };
 
   return (
@@ -48,6 +54,18 @@ const CreatePetPage: React.FC = () => {
           onBackButtonClick={() => {
             setPhase("speciesSelect");
           }}
+        />
+      )}
+
+      {phase === "completed" && (
+        <ConfirmationStep
+          pet={pet}
+          name={name as any}
+          specie={specie as any}
+          onBackButtonClick={() => {
+            setPhase("naming");
+          }}
+          onConfirm={onConfirm}
         />
       )}
     </>

@@ -17,8 +17,7 @@ const useStyles = makeStyles({
 
   petButtons: {
     position: "fixed",
-    bottom: 24,
-    width: `calc(100%-32px)`,
+    bottom: 80,
     marginLeft: 16,
     marginRight: 16,
   },
@@ -35,7 +34,6 @@ const useStyles = makeStyles({
     position: "fixed",
     left: "8px",
     top: "16px",
-    marginLeft: -8,
   },
 
   imageContainer: {},
